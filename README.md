@@ -25,3 +25,4 @@ The project is organized as follows:
 ## Important Notes
 - The `map/` directory is crucial for the Rojo setup. Do not delete or manually modify its contents.
 - Always extract assets after making changes in Roblox Studio to avoid losing any unsaved work.
+- To use install-env.sh` (Linux/Mac) or `install-env.bat` (Windows) cargo must be installed, to install cargo see https://rustup.rs/
