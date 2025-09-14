@@ -2,22 +2,19 @@
   "name": "fully-managed",
   "tree": {
     "$className": "DataModel",
-
     "ReplicatedStorage": {
       "Shared": {
         "$path": "src/shared"
       },
       "Assets": {
-        "$path": "assets"
+        "$path": "map/ReplicatedStorage/Assets"
       }
     },
-
     "ServerScriptService": {
       "Server": {
         "$path": "src/server"
       }
     },
-
     "StarterPlayer": {
       "StarterPlayerScripts": {
         "Client": {
@@ -25,19 +22,44 @@
         }
       }
     },
-
     "Workspace": {
       "$path": "map/Workspace.rbxm"
     },
-
     "Lighting": {
       "$path": "map/Lighting.rbxm"
     },
-
     "SoundService": {
       "$properties": {
         "RespectFilteringEnabled": true
-      }
+      },
+        "$path": "map/SoundService.rbxm"
+    },
+    "Chat": {
+      "$path": "map/Chat.rbxm"
+    },
+    "LocalizationService": {
+      "$path": "map/LocalizationService.rbxm"
+    },
+    "MaterialService": {
+      "$path": "map/MaterialService.rbxm"
+    },
+    "Players": {
+      "$path": "map/Players.rbxm"
+    },
+    "ReplicatedFirst": {
+      "$path": "map/ReplicatedFirst.rbxm"
+    },
+    "ServerStorage": {
+      "$path": "map/ServerStorage.rbxm"
+    },
+    "StarterGui": {
+      "$path": "map/StarterGui.rbxm"
+    },
+    "StarterPack": {
+        "$path": "map/StarterPack.rbxm"
+    },
+    "TestService": {
+      "$path": "map/TestService.rbxm"
     }
   }
 }

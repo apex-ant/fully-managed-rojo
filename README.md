@@ -1,3 +1,27 @@
-# fully-managed-template
-This repository is related to a [blog post](https://solarhorizon.dev/2024/07/30/top-to-bottom-fully-managed-rojo/) 
-about setting up a fully managed Rojo project.
+# Fully managed Rojo template for Roblox
+
+This repository provides a fully managed Rojo template for Roblox development. It includes a pre-configured setup with essential tools and configurations for Luau.
+Based on the work of https://github.com/SolarHorizon/fully-managed-rojo.git
+
+## Project Structure
+The project is organized as follows:
+
+```
+.
+├── map/                    # Where workspace and other roblox studio files are generated, this folder is very important, do not delete or touch manually
+├── src/                    # Standard Rojo Luau source folder
+├── build-project.(sh/bat)/ # Script to build initial roblox project
+├── extract-assets.(sh/bat) # Script to extract assets from roblox project file, !!!!UNEXTRACTED CHANGES TO ROBLOX PROJECT WILL BE LOST IF NOT EXTRACTED!!!!!!!
+└── install-env.(sh/bat)    # Script to install required tooling
+```
+
+## Workflow
+1. **Install Environment**: Run `install-env.sh` (Linux/Mac) or `install-env.bat` (Windows) to set up the necessary tools.
+2. **Build Project**: Use `build-project.sh` or `build-project.bat` to generate the initial Roblox project file.
+3. **Run Rojo**: Start using `rojo serve` to sync your Luau source code with the Roblox project.
+4. **Extract Assets**: If you make changes in Roblox Studio, run `extract-assets.sh` or `extract-assets.bat` to sync those changes back to your source files.
+5. **PROFIT???**
+
+## Important Notes
+- The `map/` directory is crucial for the Rojo setup. Do not delete or manually modify its contents.
+- Always extract assets after making changes in Roblox Studio to avoid losing any unsaved work.
