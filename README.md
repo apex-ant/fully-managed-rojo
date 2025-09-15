@@ -14,6 +14,9 @@ The project is organized as follows:
 ├── extract-assets.(sh/bat) # Script to extract assets from roblox project file, !!!!UNEXTRACTED CHANGES TO ROBLOX PROJECT WILL BE LOST IF NOT EXTRACTED!!!!!!!
 └── install-env.(sh/bat)    # Script to install required tooling
 ```
+## Requirements
+ - Cargo
+ - Node.js
 
 ## Workflow
 1. **Install Environment**: Run `install-env.sh` (Linux/Mac) or `install-env.bat` (Windows) to set up the necessary tools.
@@ -28,6 +31,10 @@ The project is organized as follows:
 3. Make changes in roblox studio or in the src folder
 4. If you made changes in roblox studio run `extract-assets.sh` or `extract-assets.bat`
 5. Commit all changes
+
+## How to start project
+In one terminal run `nodemon -w build.rbxl --exec ./extract-assets.sh` (Linux/Mac) or `nodemon -w build.rbxl --exec ./extract-assets.bat` (Windows) to automatically extract assets when the roblox project file changes.
+In another terminal run `rojo serve` to start the Rojo server and sync code changes.
 
 ## Important Notes
 - The `map/` directory is crucial for the Rojo setup. Do not delete or manually modify its contents.
