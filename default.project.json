@@ -20,7 +20,8 @@
         "Client": {
           "$path": "src/client"
         }
-      }
+      },
+        "$path": "map/StarterPlayer.rbxm"
     },
     "Workspace": {
       "$path": "map/Workspace.rbxm"
