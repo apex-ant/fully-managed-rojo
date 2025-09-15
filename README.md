@@ -22,6 +22,13 @@ The project is organized as follows:
 4. **Extract Assets**: If you make changes in Roblox Studio, run `extract-assets.sh` or `extract-assets.bat` to sync those changes back to your source files.
 5. **PROFIT???**
 
+## How to Commit Changes
+1. Fetch changes
+2. Build the project using `build-project.sh` or `build-project.bat`
+3. Make changes in roblox studio or in the src folder
+4. If you made changes in roblox studio run `extract-assets.sh` or `extract-assets.bat`
+5. Commit all changes
+
 ## Important Notes
 - The `map/` directory is crucial for the Rojo setup. Do not delete or manually modify its contents.
 - Always extract assets after making changes in Roblox Studio to avoid losing any unsaved work.
